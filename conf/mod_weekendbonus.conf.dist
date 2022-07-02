@@ -1,16 +1,16 @@
 [worldserver]
 
-# Multiplier for experience gains on weekends
+# 周末经验增益倍数
 WeekendBonus.Multiplier.Experience = 2.0
 
-# Multiplier for money looted and rewarded from quests on weekends
+# 周末从任务中掠夺和奖励的金钱倍数
 WeekendBonus.Multiplier.Money = 2.0
 
-# Multiplier for profession skill ups on weekends
+# 周末职业技能提升的倍数
 WeekendBonus.Multiplier.Professions = 2
 
-# Multiplier for reputation gains on weekends
+# 周末声望增益的倍数
 WeekendBonus.Multiplier.Reputation = 2.0
 
-# Multiplier for weapons and defense skill ups on weekends
+# 周末武器和防御技能提升的倍数
 WeekendBonus.Multiplier.Proficiencies = 2
