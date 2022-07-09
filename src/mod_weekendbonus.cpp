@@ -24,7 +24,7 @@ public:
         time_t localTime = time(NULL);
 
         if ((localtime(&localTime)->tm_wday == Day::FRIDAY && localtime(&localTime)->tm_hour >= 18) || localtime(&localTime)->tm_wday == Day::SATURDAY || localtime(&localTime)->tm_wday == Day::SUNDAY)
-            ChatHandler(player->GetSession()).SendSysMessage("The weekend bonus is active, granting you bonuses!");
+            ChatHandler(player->GetSession()).SendSysMessage("周末双倍增益，大家加油吧！");
     }
 };
 
@@ -86,13 +86,13 @@ public:
 
         if ((localtime(&localTime)->tm_wday == Day::FRIDAY && localtime(&localTime)->tm_hour >= 18) && !triggered)
         {
-            sWorld->SendServerMessage(SERVER_MSG_STRING, "The weekend bonus is now active, granting you bonuses!");
+            sWorld->SendServerMessage(SERVER_MSG_STRING, "周末增益已开启。");
             SetWorldRates(true);
             triggered = true;
         }
         else if (localtime(&localTime)->tm_wday == Day::MONDAY && triggered)
         {
-            sWorld->SendServerMessage(SERVER_MSG_STRING, "The weekend bonus is no longer active.");
+            sWorld->SendServerMessage(SERVER_MSG_STRING, "周末增益失效。");
             SetWorldRates(false);
             triggered = false;
         }
